@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <script type="text/javascript">
+    function firstChar(text) {
+      text = text.trim();
+      return text[0] || '';
+    }
 
+    // Uncomment the following line to test with user input
+    // const text = prompt("Enter text:");
+    // alert(firstChar(text));
+
+    // Example test
+    console.log(firstChar(' Rosa Parks '));  // Output: 'R'
+    console.log(firstChar(' Hello World ')); // Output: 'H'
+    console.log(firstChar(' '));             // Output: ''
+    console.log(firstChar(''));              // Output: ''
+  </script>
 </body>
-
 </html>
